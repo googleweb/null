@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 车辆类型 -->
+    <string-array name="cllx">
+        <item>微、小型載客汽車</item>
+        <item>中型載客汽車</item>
+        <item>大型載客汽車</item>
+        <item>載貨（包括牽引半掛車）</item>
+    </string-array>
+    <!-- 地区 -->
+    <string-array name="dp">
+        <item>北京</item>
+        <item>廣東 </item>
+        <item>四川</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="sfhj">
+        <item>是</item>
+        <item>否 </item>
+    </string-array>
+    <string-array name="s_xh">
+        <item>0</item>
+        <item>1</item>
+        <item>2 </item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6 </item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <!-- 是否全屏拍照 -->
+    <string-array name="sfqppz">
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+    <!-- 号牌类型 -->
+    <string-array name="hplx">
+        <item>小型汽車號牌</item>
+        <item>大型汽車號牌</item>
+        <item>使館汽車號牌</item>
+        <item>領館汽車號牌</item>
+        <item>境外汽車號牌</item>
+        <item>外籍汽車號牌</item>
+        <item>二、三輪摩托車號牌</item>
+        <item>輕便摩托車號牌</item>
+        <item>使館摩托車號牌</item>
+        <item>領館摩托車號牌</item>
+        <item>境外摩托車號牌</item>
+        <item>外籍摩托車號牌</item>
+        <item>農用運輸車號牌</item>
+        <item>拖拉機號牌</item>
+        <item>掛車號牌</item>
+        <item>教練汽車號牌</item>
+        <item>教練摩托車號牌</item>
+        <item>實驗汽車號牌</item>
+        <item>實驗摩托車號牌</item>
+        <item>臨時入境汽車號牌</item>
+        <item>臨時入境摩托車號牌</item>
+        <item>臨時行駛車號牌</item>
+        <item>警用汽車號牌</item>
+        <item>警用摩托車號牌</item>
+        <item>其他號牌</item>
+    </string-array>
+    <!-- 号牌 简称 -->
+    <string-array name="qghpt">
+        <item>川</item>
+        <item>京</item>
+        <item>沪</item>
+        <item>津</item>
+        <item>渝</item>
+        <item>黑</item>
+        <item>吉</item>
+        <item>辽</item>
+        <item>蒙</item>
+        <item>冀</item>
+        <item>新</item>
+        <item>甘</item>
+        <item>青</item>
+        <item>陕</item>
+        <item>宁</item>
+        <item>豫</item>
+        <item>鲁</item>
+        <item>晋</item>
+        <item>皖</item>
+        <item>鄂</item>
+        <item>湘</item>
+        <item>苏</item>
+        <item>黔</item>
+        <item>桂</item>
+        <item>滇</item>
+        <item>藏</item>
+        <item>浙</item>
+        <item>赣</item>
+        <item>粤</item>
+        <item>闽</item>
+        <item>台</item>
+        <item>琼</item>
+        <item>港</item>
+        <item>澳</item>
+        <item>其它</item>
+    </string-array>
+    <!-- 使用性质 -->
+    <string-array name="syxz">
+        <item>非營運</item>
+        <item>公路客運</item>
+        <item>公交客運</item>
+        <item>出租客運</item>
+        <item>旅遊客運</item>
+        <item>貨運</item>
+        <item>租運</item>
+        <item>警用</item>
+        <item>消防</item>
+        <item>救護</item>
+        <item>工程搶險</item>
+        <item>营转非</item>
+        <item>出租转非</item>
+        <item>教練</item>
+        <item>幼兒校車</item>
+        <item>小學校車</item>
+        <item>其他校車</item>
+        <item>危險品運輸</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 驱动型式 -->
+    <string-array name="qdxs">
+        <item>前置引擎前輪驅動</item>
+        <item>前置引擎后輪驅動</item>
+        <item>4轮驅動</item>
+        <item>中置引擎后輪驅動</item>
+        <item>后置引擎后輪驅動</item>
+    </string-array>
+    <!-- 前照灯制 -->
+    <string-array name="qzdz">
+        <item>四燈遠近光</item>
+        <item>四燈遠光</item>
+        <item>二燈遠近光</item>
+        <item>二燈近光</item>
+        <item>一燈遠光</item>
+    </string-array>
+    <!-- 车身颜色 -->
+    <string-array name="clys">
+        <item>黑</item>
+        <item>白</item>
+        <item>灰</item>
+        <item>黃</item>
+        <item>粉</item>
+        <item>紅</item>
+        <item>紫</item>
+        <item>錄</item>
+        <item>藍</item>
+        <item>棕</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 燃料种类 -->
+    <string-array name="rlzl">
+        <item>汽油</item>
+        <item>柴油</item>
+        <item>電</item>
+        <item>混合油</item>
+        <item>天然氣</item>
+        <item>液化石油氣</item>
+        <item>甲醇</item>
+        <item>乙醇</item>
+        <item>太陽能</item>
+        <item>混合動力</item>
+        <item>無</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 独立悬架 -->
+    <string-array name="dlxj">
+        <item>獨立</item>
+        <item>非獨立</item>
+    </string-array>
+    <!-- 驻车轴 -->
+    <string-array name="zcz">
+        <item>---</item>
+    </string-array>
+    <!-- 进气方式 -->
+    <string-array name="jqfs">
+        <item>自然進氣</item>
+        <item>渦輪增壓</item>
+    </string-array>
+    <!-- 制动源 -->
+    <string-array name="zdy">
+        <item>液壓制動</item>
+        <item>氣壓制動</item>
+    </string-array>
+    <!-- 是否 -->
+    <string-array name="sf">
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+    <!-- 满载/空载 -->
+    <string-array name="mzkz">
+        <item>滿載</item>
+        <item>空載</item>
+    </string-array>
+    <!-- 新车/在用车 -->
+    <string-array name="xczyc">
+        <item>在用車</item>
+        <item>新車</item>
+    </string-array>
+    <!-- 变速器形式 -->
+    <string-array name="bsqxs">
+        <item>手動變速器</item>
+        <item>自動變速器</item>
+        <item>手動/自動變速器</item>
+        <item>無級變速器</item>
+    </string-array>
+    <!-- 驱动轴位 -->
+    <string-array name="qdzw">
+        <item>---</item>
+    </string-array>
+    <!-- 废气测量方式 -->
+    <string-array name="fqclfs">
+        <item>双怠速</item>
+        <item>不透光</item>
+        <item>工況</item>
+        <item>滤纸式</item>
+        <item>怠速</item>
+    </string-array>
+    <!-- 初检/复检 -->
+    <string-array name="cjfj">
+        <item>初檢</item>
+        <item>复檢</item>
+    </string-array>
+    <string-array name="jclb">
+        <item>新車登陸</item>
+        <item>在用車</item>
+        <item>受托檢驗</item>
+    </string-array>
+    <!-- 新车 排放标准 -->
+    <string-array name="xc_pfbz">
+        <item>2005.7.1起第一类轻型汽车新车</item>
+        <item>2005.7.1起第二类轻型汽车新车</item>
+        <item>2005.7.1起重型汽车新车</item>
+        <item>2002.07.01前生产农用车</item>
+        <item>2002.07.01-2004.06.30生产农用车</item>
+        <item>2004.07.01起生产农用车</item>
+    </string-array>
+    <!-- 在用车 排放标准 -->
+    <string-array name="zyc_pfbz">
+        <item>2004.9.1起重型在用车</item>
+        <item>2000.7.1起第一类轻型汽车在用车</item>
+        <item>2001.10.1起第二类轻型汽车在用车</item>
+        <item>1995.7.1起轻型汽车在用车</item>
+        <item>1995.7.1前轻型汽车在用车</item>
+        <item>1995.7.1起重型在用车</item>
+        <item>1995.7.1前重型在用车</item>
+        <item>2001.10.1起涡轮增压式在用车</item>
+        <item>2001.10.1起自然吸气式在用车</item>
+        <item>1995.7.1起在用车</item>
+        <item>1995.7.1前在用车</item>
+        <item>2002.07.01前生产农用车</item>
+        <item>2002.07.01-2004.06.30生产农用车</item>
+        <item>2004.07.01起生产农用车</item>
+    </string-array>
+    <string-array name="zs">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,735 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_repeat"
+    android:orientation="vertical" >
+
+    <!-- 滚动条 -->
+
+    <ScrollView
+        android:id="@+id/inspection_mainView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp"
+        android:scrollbars="@null" >
+
+        <!-- 布局文件 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/zplx_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/carlogin_item_txt"
+                        style="@style/inspection_text"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="线  号："
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <EditText
+                        android:id="@+id/jcxdh_sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cfsj"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/kslx"
+                        style="@style/inspection_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_initial_setup_pree"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="开始录像" >
+                    </Button>
+
+                    <LinearLayout
+                        android:id="@+id/message_linear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="invisible" >
+
+                        <ProgressBar
+                            android:id="@+id/progresslx"
+                            style="?android:attr/progressBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            android:id="@+id/textlx_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="正在录像..."
+                            android:textColor="@android:color/black"
+                            android:textSize="14px" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/jslx"
+                        style="@style/inspection_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_initial_setup_pree"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="结束录像" >
+                    </Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/zp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp" >
+
+                    <Button
+                        android:id="@+id/xczdkszp"
+                        style="@style/inspection_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_initial_setup_pree"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="行车制动开始照片" >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/xczdjszp"
+                        style="@style/inspection_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_initial_setup_pree"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="行车制动结束照片" >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/pdzczdzp"
+                        style="@style/inspection_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_initial_setup_pree"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="坡道驻车制动照片" >
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/inspection_text"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="车牌号码  : "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/inspection_hphm"
+                    style="@style/inspection_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/inspection_text"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="识别代号  : "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/inspection_clsbdh"
+                    style="@style/inspection_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/inspection_text"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="复检项目  : "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/bhgxm"
+                    style="@style/inspection_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inspection_ywlx_value_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/inspection_text"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="业务类型  : "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/inspection_ywlx_value"
+                    style="@style/inspection_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/jyy_text"
+                    style="@style/inspection_text"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="检验人员  :"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/inspection_jyy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/tijdgsj"
+                style="@style/inspection_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_initial_setup_pree"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="提 交 灯 光 数 据"
+                android:visibility="gone" >
+            </Button>
+
+            <LinearLayout
+                android:id="@+id/sfzh"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/jyy_text"
+                    style="@style/inspection_text"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="身份证号  :"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/inspection_jyysfzhm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cwkc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/inspection_text"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="车外廓长 :"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/cwkc_e"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cwkk"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/inspection_text"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="车外廓宽  :"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/cwkk_e"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cwkg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/inspection_text"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="车外廓高 :"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/cwkg_e"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+             <LinearLayout
+                android:id="@+id/zbzl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/inspection_text"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="整备质量:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/zbzl_e"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sfbgxx_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/sfbgxx"
+                    style="@style/inspection_text"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="是否变更:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioGroup
+                    android:id="@+id/item_bgxx_rdogrp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/item_bgxx_yes"
+                        style="@style/inspection_radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:tag="1"
+                        android:text="是" />
+
+                    <RadioButton
+                        android:id="@+id/item_bgxx_no"
+                        style="@style/inspection_radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:tag="0"
+                        android:text="否" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/autoAddLayout_xxbg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="@null"
+                android:visibility="gone" >
+
+                <scxd.jcz.ajlw.android.model.ItemLayout
+                    android:id="@+id/autoAddLayout_xxbg_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center" >
+
+                        <Button
+                            android:id="@+id/autoAddLayout_xxbg_query"
+                            style="@style/inspection_value"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="60dp"
+                            android:background="@drawable/btn_style1"
+                            android:text="查  询" />
+
+                        <Button
+                            android:id="@+id/autoAddLayout_xxbg_submit"
+                            style="@style/inspection_value"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_style1"
+                            android:text="确  定" />
+                    </LinearLayout>
+                </scxd.jcz.ajlw.android.model.ItemLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/sfslliner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/item_title_txt"
+                    style="@style/inspection_text"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="是否三轮:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioGroup
+                    android:id="@+id/item_content_rdogrp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/item_rdo_yes"
+                        style="@style/inspection_radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:tag="1"
+                        android:text="是" />
+
+                    <RadioButton
+                        android:id="@+id/item_rdo_no"
+                        style="@style/inspection_radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:tag="0"
+                        android:text="否" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/lgb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="@null" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lgb_text"
+                        style="@style/inspection_text"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="老国标 : "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/autoAddLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/xgb_text"
+                        style="@style/inspection_text"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="新国标 : "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/autoAddLayout_xgb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/kx_text"
+                        style="@style/inspection_text"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="可选检验项目: "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/autoAddLayout_kx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="@null" >
+
+                <scxd.jcz.ajlw.android.model.ItemLayout
+                    android:id="@+id/lsDataLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+                </scxd.jcz.ajlw.android.model.ItemLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/sfzh"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/jyy_text"
+                    style="@style/inspection_text"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text=" 检验员意见:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/jyyjy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="10" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inspection_selectLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/inspection_text"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="查验结论："
+                    android:textSize="18dp" />
+
+                <Spinner
+                    android:id="@+id/inspection_select"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p_sign"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="检验员签名："
+                     style="@style/inspection_text"/>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="1.0dip"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_marginRight="1.0dip"
+                    android:layout_weight="3.0"
+                    android:background="#ffffffff" >
+
+                    <ImageView
+                        android:id="@+id/iv_rs_sign"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true" />
+
+                    <TextView
+                        android:id="@+id/tv_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="点此签名" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inspection_selectLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/tizjl"
+                    style="@style/inspection_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_initial_setup_pree"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="提交总结论"
+                    android:visibility="invisible" >
+                </Button>
+
+                <Button
+                    android:id="@+id/submitInspection"
+                    style="@style/inspection_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_initial_setup_pree"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="提  交" >
+                </Button>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- loading -->
+
+    <ProgressBar
+        android:id="@+id/inspection_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/inspection_loadingMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/dengdai_msg" />
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/car_list_msg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/l_bg">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <Button
+            android:id="@+id/btu_zdy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="10dp"
+            android:layout_y="20dp"
+            android:text="@+string/btu_zdy" />
+
+        <EditText
+            android:id="@+id/edt_msg_seach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="20dp"
+            android:layout_y="30dp"
+            android:maxLength="10"
+            android:textSize="14dp"
+            android:width="100dp" />
+
+        <Button
+            android:id="@+id/btu_seach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="150dp"
+            android:layout_y="20dp"
+            android:text="@+string/btu_seach" />
+
+        <Button
+            android:id="@+id/btu_seach_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="180dp"
+            android:layout_y="20dp"
+            android:text="@+string/btu_seach_all" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/car_list_progressBar_dengdai_carList"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" 
+       
+        />
+    <TextView 
+        android:id="@+id/dengdai_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/dengdai_msg" 
+        />
+
+    <ListView
+        android:id="@+id/cl_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:visibility="gone" />
+
+</LinearLayout>

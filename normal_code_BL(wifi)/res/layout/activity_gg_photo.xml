@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GG_photoActivity"
+    android:background="@color/whit" 
+    android:orientation="vertical">
+
+   <RelativeLayout
+        style="@style/edittext_style"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/bg_carlogin_itembar" >
+
+        <TextView
+            android:id="@+id/txtCameraImgv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="预  览  区"
+            android:textColor="#666666"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgvCamera"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="@string/app_name"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+         <View
+            android:id="@+id/left_shake"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/left104"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/right_shake"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/left10"
+            android:visibility="invisible" />
+        <TextView
+            android:id="@+id/bottom_shake"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/translucence_50"
+            android:text="1/5"
+            android:textColor="@color/whit"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+           />
+    </RelativeLayout>
+
+
+</LinearLayout>

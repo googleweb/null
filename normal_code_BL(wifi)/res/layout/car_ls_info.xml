@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_repeat"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:id="@+id/waitView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/car_list_progressBar_dengdai_carList"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/dengdai_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dengdai_msg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/ls_txt_title3"
+                        style="@style/inspection_text"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:text="车辆号码 :"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/ls_txt_cphm"
+                        style="@style/inspection_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12345"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/ls_txt_title4"
+                        style="@style/inspection_text"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:text="车辆型号 :"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/ls_txt_clxh"
+                        style="@style/inspection_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="K12"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        style="@style/inspection_text"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:text="车辆VIN  :"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/ls_txt_vin"
+                        style="@style/inspection_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1231243"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ls_btn_submit"
+                style="@style/inspection_value"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style1"
+                android:text="完成路试" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioGroup
+                    android:id="@+id/ls_radioGroup_items"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/ls_btn_xczd"
+                        style="@style/radio_btn_style1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="驻车制动"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/ls_btn_zczd"
+                        style="@style/radio_btn_style1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="行车制动"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/ls_btn_mfdd"
+                        style="@style/radio_btn_style1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="  MFDD  "
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/ls_btn_cs"
+                        style="@style/radio_btn_style1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="  车速   "
+                        android:textSize="15dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <ViewFlipper
+                android:id="@+id/ls_viewFlipper_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <ScrollView
+                    android:id="@+id/scrollView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="@null" >
+
+                    <scxd.jcz.ajlw.android.model.LsItemBar
+                        android:id="@+id/ls_itemBar_zczd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical" >
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                style="@style/inspection_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2. 坡度 :            "
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <RadioGroup
+                                android:id="@+id/ls_radioGroup_pd"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <RadioButton
+                                    android:id="@+id/ls_pd_radio0"
+                                    style="@style/inspection_radioButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:text="20°" />
+
+                                <RadioButton
+                                    android:id="@+id/ls_pd_radio1"
+                                    style="@style/inspection_radioButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="15°" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:gravity="center_vertical" >
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                style="@style/inspection_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="上坡 :"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <EditText
+                                android:id="@+id/ls_pd_edit_shang"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="numberDecimal" />
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                style="@style/inspection_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Min"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:gravity="center_vertical" >
+
+                            <TextView
+                                android:id="@+id/TextView05"
+                                style="@style/inspection_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="下坡 :"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <EditText
+                                android:id="@+id/ls_pd_edit_xia"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="numberDecimal" />
+
+                            <TextView
+                                android:id="@+id/TextView02"
+                                style="@style/inspection_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Min"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/ls_zczd_btn_submit"
+                            style="@style/inspection_value"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/btn_style1"
+                            android:text="提  交" />
+                    </scxd.jcz.ajlw.android.model.LsItemBar>
+                </ScrollView>
+
+                <ScrollView
+                    android:id="@+id/scrollView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="@null" >
+
+                    <scxd.jcz.ajlw.android.model.LsItemBar
+                        android:id="@+id/ls_itemBar_xczd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/ls_xczd_btn_submit"
+                            style="@style/inspection_value"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/btn_style1"
+                            android:text="提  交" />
+                    </scxd.jcz.ajlw.android.model.LsItemBar>
+                </ScrollView>
+
+                <ScrollView
+                    android:id="@+id/ScrollView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="@null" >
+
+                    <scxd.jcz.ajlw.android.model.LsItemBar
+                        android:id="@+id/ls_itemBar_mfdd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/ls_mfdd_btn_submit"
+                            style="@style/inspection_value"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/btn_style1"
+                            android:text="提  交" />
+                    </scxd.jcz.ajlw.android.model.LsItemBar>
+                    
+                </ScrollView>
+
+                <ScrollView
+                    android:id="@+id/scrollView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="@null" >
+
+                    <scxd.jcz.ajlw.android.model.LsItemBar
+                        android:id="@+id/ls_itemBar_cs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/ls_cs_btn_submit"
+                            style="@style/inspection_value"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/btn_style1"
+                            android:text="提  交" />
+                    </scxd.jcz.ajlw.android.model.LsItemBar>
+                </ScrollView>
+            </ViewFlipper>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget29"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_x="0dip"
+    android:layout_y="2dip"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/pz_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/pz_code"
+        style="@style/inspection_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="50dp"
+        android:layout_y="10dp"
+        android:text="sfsdfsd"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/pz_ispz_chk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_x="280dp"
+        android:layout_y="8dp"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" >
+
+    </CheckBox>
+
+    <TextView
+        android:id="@+id/pz_xm"
+        style="@style/inspection_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/pz_img"
+        android:layout_toLeftOf="@+id/pz_ispz_chk"
+        android:text="sdfsdfsdf" />
+
+</RelativeLayout>

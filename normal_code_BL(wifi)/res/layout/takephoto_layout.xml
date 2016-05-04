@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TakePhotoActivity" >
+<RelativeLayout
+    android:id="@+id/sufaceViewLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    >
+    <SurfaceView
+        android:id="@+id/surfaceView_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/btn_takephoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="拍照"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_foucs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/img_auto_focus_off"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtCamera_clsbdh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车辆 VIN : "
+            android:textColor="#ff0000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCamera_hphm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车牌号码 : "
+            android:textColor="#ff0000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCamera_imgName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="照片名字 : "
+            android:textColor="#ff0000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <scxd.jcz.ajlw.android.model.VerticalSeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="30dp"
+            android:layout_height="170dp"
+            android:layout_marginBottom="20dp" /> 
+
+        <ToggleButton
+            android:id="@+id/btn_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_auto_flash"
+            android:checked="false"
+            android:textOff="@null"
+            android:textOn="@null" />
+
+        <ToggleButton
+            android:id="@+id/btn_autoFocus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_auto_focus"
+            android:textOff="@null"
+            android:textOn="@null"
+            android:checked="true"
+            android:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/control_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+        <ImageView
+            android:id="@+id/img_tempCamera"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:background="@color/translucence_50"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_over"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_updatelx_pressed" />
+
+            <Button
+                android:id="@+id/btn_retake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/btn_recodepz_pressed" />
+        </LinearLayout>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

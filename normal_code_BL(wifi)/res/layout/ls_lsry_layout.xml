@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|center" >
+
+    <TextView
+        android:id="@+id/TextView01"
+        style="@style/inspection_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="检验人员 :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/ls_spinner_people"
+        style="@style/inspection_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+</LinearLayout>

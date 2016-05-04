@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <AbsoluteLayout
+        android:id="@+id/widget29"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dip"
+        android:layout_y="2dip" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_y="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="40dp"
+            android:layout_y="10dp"
+            android:textColor="#486e9a"
+            android:text="号牌号码：" />
+
+        <TextView
+            android:id="@+id/car_hphm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:layout_x="130dp"
+            android:layout_y="10dp" 
+            android:textColor="#486e9a"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="40dp"
+            android:layout_y="30dp"
+            android:text="检验结论："
+            android:textColor="#486e9a" />
+        <TextView
+            android:id="@+id/car_jyjl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_x="130dp"
+            android:layout_y="30dp"
+            android:text=""
+            android:textColor="#486e9a" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="40dp"
+            android:layout_y="50dp"
+            android:text="车架号码:" 
+            android:textColor="#486e9a"/>
+        
+         <TextView
+            android:id="@+id/car_vin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_x="130dp"
+            android:layout_y="50dp"
+            android:text=""
+            android:textColor="#486e9a" />
+         
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="40dp"
+            android:layout_y="70dp"
+            android:text="登录日期:" 
+            android:textColor="#486e9a"/>
+        
+         <TextView
+            android:id="@+id/car_dlrq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_x="130dp"
+            android:layout_y="70dp"
+            android:text=""
+            android:textColor="#486e9a" />
+         
+         <TextView
+            android:id="@+id/car_jylsh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+             />
+  		<TextView
+            android:id="@+id/car_hpzl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+             />
+  		   <TextView
+            android:id="@+id/car_jycs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+             />
+  		<TextView
+            android:id="@+id/car_cllx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+             />
+  		 <TextView
+            android:id="@+id/car_jylb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+             />
+  		<TextView
+            android:id="@+id/car_syxz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+             />
+    </AbsoluteLayout>
+</AbsoluteLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <AbsoluteLayout
+        android:id="@+id/widget29"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dip"
+        android:layout_y="2dip" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_y="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="40dp"
+            android:layout_y="8dp"
+            android:textColor="#486e9a"
+            android:text="@+string/car_hphm_name" />
+
+        <TextView
+            android:id="@+id/car_hphm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_x="100dp"
+            android:layout_y="8dp" 
+            android:textColor="#486e9a"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="40dp"
+            android:layout_y="30dp"
+            android:text="@+string/car_cllx_name"
+            android:textColor="#486e9a" />
+         <TextView
+            android:id="@+id/car_sfwcpz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+             />
+
+        <TextView
+            android:id="@+id/car_cllx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_x="75dp"
+            android:layout_y="30dp"
+            android:text="@+string/car_cllx"
+            android:textColor="#486e9a" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="40dp"
+            android:layout_y="50dp"
+            android:text="@+string/car_vin_name" 
+            android:textColor="#486e9a"/>
+
+        <TextView
+            android:id="@+id/car_vin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_x="130dp"
+            android:layout_y="50dp"
+            android:text="@+string/car_cllx"
+            android:textColor="#486e9a" />
+        <TextView
+            android:id="@+id/car_hpzl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_x="130dp"
+            android:layout_y="50dp"
+            android:visibility="gone" 
+            android:textColor="#486e9a"/>
+         <TextView
+            android:id="@+id/car_cllsh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_x="130dp"
+            android:layout_y="50dp"
+            android:visibility="gone" />
+          <TextView
+            android:id="@+id/car_wjtd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_x="130dp"
+            android:layout_y="50dp"
+            android:visibility="gone" />
+           <TextView
+            android:id="@+id/car_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_x="130dp"
+            android:layout_y="50dp"
+            android:visibility="gone" />
+		   <TextView
+            android:id="@+id/car_syxz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_x="130dp"
+            android:layout_y="50dp"
+            android:visibility="gone" />
+            <TextView
+            android:id="@+id/car_jclb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_x="130dp"
+            android:layout_y="50dp"
+            android:visibility="gone" />
+<TextView 
+    android:id="@+id/car_txt_zdy_res"
+    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="250dp"
+            android:layout_y="10dp"
+    
+    android:visibility="gone"
+    />
+        <CheckBox
+            android:id="@+id/xm_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="280dp"
+            android:layout_y="8dp"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone"/>"
+    </AbsoluteLayout>
+
+</AbsoluteLayout>

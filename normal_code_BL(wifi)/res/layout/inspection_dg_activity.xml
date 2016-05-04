@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_repeat"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/inspection_mainView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/inspection_text"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="车牌号码  : "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/inspection_hphm"
+                    style="@style/inspection_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/inspection_text"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="识别代号  : "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/inspection_clsbdh"
+                    style="@style/inspection_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inspection_ywlx_value_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/inspection_text"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="检验项目  : "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/inspection_dg"
+                    style="@style/inspection_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="灯光" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/jyy_text"
+                    style="@style/inspection_text"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="检验人员  :"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/inspection_jyy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="@null" >
+
+                <scxd.jcz.ajlw.android.model.ItemLayout
+                    android:id="@+id/lsDataLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+                </scxd.jcz.ajlw.android.model.ItemLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/submitInspection"
+                style="@style/inspection_value"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_gravity="right"
+                android:background="@drawable/login_initial_setup"
+                android:text="提  交" >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

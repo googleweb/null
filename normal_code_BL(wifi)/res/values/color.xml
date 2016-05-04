@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!-- 半透明 -->
+    <color name="translucence_50">#50000000</color>
+    <color name="textcolor_ggpc">#FFF</color>
+    <color name="text_bule">#5A35FF</color>
+    <color name="text_back">#000000</color>
+    <color name="tabh">#808080</color>
+    <color name="whit">#FFFFFFFF</color>
+    <color name="long_bule">#0e3858</color>
+</resources>

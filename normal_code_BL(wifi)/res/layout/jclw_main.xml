@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/imge_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/logo_text"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.0"
+            android:background="@drawable/bj_logo"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/eff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/effectselect"
+        android:contentDescription="@string/app_name"
+        android:paddingLeft="10dip"
+        android:text="@string/gnxz"
+        android:textColor="@color/whit"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="2.0" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/main_btu_cai_login_list"
+                    android:layout_width="120dip"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/btn_main_cai_login_list"
+                    android:enabled="false"
+                    android:text="@string/ddlb"
+                    android:textColor="@color/whit"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/main_btu_car"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_main_cai_login_list"
+                    android:enabled="false"
+                    android:text="@string/carlogin"
+                    android:textColor="@color/whit"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/main_btu_rgjy"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/btn_main_cai_login_list"
+                    android:enabled="false"
+                    android:text="@string/pgwj"
+                    android:textColor="@color/whit"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/main_btu_wjpz"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_main_cai_login_list"
+                    android:enabled="false"
+                    android:text="@string/wjphone"
+                    android:textColor="@color/whit"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/main_btu_dtdp"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/btn_main_cai_login_list"
+                    android:enabled="false"
+                    android:text="@string/dongtaidip"
+                    android:textColor="@color/whit"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/main_btu_dpjy"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_main_cai_login_list"
+                    android:enabled="false"
+                    android:text="@string/dpjianyan"
+                    android:textColor="@color/whit"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout04"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout03"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/main_btn_xtgl"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/btn_main_cai_login_list"
+                    android:enabled="false"
+                    android:text="@string/textxtgl"
+                    android:textColor="@color/whit"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/main_btn_retakepicture"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_main_cai_login_list"
+                    android:enabled="false"
+                    android:text="@string/phonebp"
+                    android:textColor="@color/whit"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout05"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout04"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/main_btn_ls_car"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/btn_main_cai_login_list"
+                    android:enabled="false"
+                    android:text="@string/carls"
+                    android:textColor="@color/whit"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/main_btn_delete_car"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_main_cai_login_list"
+                    android:enabled="false"
+                    android:text="@string/cartb"
+                    android:textColor="@color/whit"
+                    android:textSize="16dp" />
+
+                <!--
+                 <Button
+                android:id="@+id/main_btn_clcy"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                  android:background="@drawable/btn_main_cai_login_list"
+                android:text="@string/carcy"
+                android:textSize="16dp"
+                android:textColor="@color/whit"
+                android:enabled="false" />
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout06"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout05"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/main_btn_clcy"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/btn_main_cai_login_list"
+                    android:enabled="false"
+                    android:text="@string/carcy"
+                    android:textColor="@color/whit"
+                    android:textSize="16dp" />
+                <!--
+            <Button
+                android:id="@+id/main_btn_delete_car"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="50dp"
+                 android:background="@drawable/btn_main_cai_login_list"
+                android:text="@string/cartb"
+                android:textSize="16dp"
+                android:textColor="@color/whit"
+                android:enabled="false" />
+                -->
+
+                <Button
+                    android:id="@+id/main_btn_ggbd_car"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_main_cai_login_list"
+                    android:enabled="false"
+                    android:text="@string/ggbdui"
+                    android:textColor="@color/whit"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout07"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/main_ggxx"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/btn_main_cai_login_list"
+                    android:enabled="false"
+                    android:text="公告信息"
+                    android:textColor="@color/whit"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/main_btn_forcerecheck_car"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_main_cai_login_list"
+                    android:enabled="false"
+                    android:text="@string/forcerecheck"
+                    android:textColor="@color/whit"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout08"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/main_btn_ggbd_car"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/btn_main_cai_login_list"
+                    android:enabled="false"
+                    android:text="@string/ggbdui"
+                    android:textColor="@color/whit"
+                    android:textSize="16dp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/main_linearLayout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/main_btu_zxxt"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_seelp_press"
+            android:paddingLeft="30dp"
+            android:text="@string/exitss"
+            android:textColor="@color/long_bule"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

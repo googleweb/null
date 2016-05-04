@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/l_bg"
+    android:id="@+id/zdypzxm"
+    android:orientation="vertical"
+    android:padding="10dp" >
+    <CheckBox
+        android:id="@+id/hpsb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/inspection_text"
+        android:text="号牌识别" />
+
+    <CheckBox
+        android:id="@+id/fdjh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/inspection_text"
+        android:text="发动机号" />
+    <CheckBox
+        android:id="@+id/wgzp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/inspection_text"
+        android:text="外观照片" />
+
+    <CheckBox
+        android:id="@+id/cnzqxh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/inspection_text"
+        android:text="车内最前方向后拍照" />
+
+    <CheckBox
+        android:id="@+id/mhqpz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/inspection_text"
+        android:text="灭火器拍照" />
+
+    <CheckBox
+        android:id="@+id/aqscpz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/inspection_text"
+        android:text="安全手锤拍照" />
+
+    <CheckBox
+        android:id="@+id/xsjlypz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/inspection_text"
+        android:text="行驶记录仪拍照" />
+
+    <CheckBox
+        android:id="@+id/tczsbz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/inspection_text"
+        android:text="停车指示标志" />
+    <CheckBox
+        android:id="@+id/qita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/inspection_text"
+        android:text="其它" />
+
+    <Button
+        android:id="@+id/bcbt"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_style1"
+        android:text="确  定"  />
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/logo_text"
+            android:contentDescription="@string/app_name" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_weight="2.0"
+        android:background="@drawable/loginbg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/bj_logo"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <EditText
+                    android:id="@+id/text_name"
+                    style="@style/edittext_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginRight="20dip"
+                    android:ems="60"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:paddingLeft="70dp" />
+
+                <EditText
+                    android:id="@+id/text_pass"
+                    style="@style/edittext_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_below="@id/text_name"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="10dp"
+                    android:ems="60"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:paddingLeft="70dp" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/text_name"
+                    android:layout_marginRight="10dip"
+                    android:paddingLeft="5dip"
+                    android:text="@string/lable_name" />
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/text_pass"
+                    android:layout_marginRight="10dip"
+                    android:paddingLeft="5dip"
+                    android:text="@string/lable_pass" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <Button
+                android:id="@+id/btu_login"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1.0"
+                 android:text="@string/longin"
+            android:paddingLeft="30dp"
+             android:textSize="16dp"
+            android:textColor="@color/long_bule"
+                android:background="@drawable/btn_login_pree" />
+
+            <Button
+                android:id="@+id/btu_cancel"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="30dip"
+                android:layout_weight="1.0"
+                 android:text="@string/exit"
+            android:paddingLeft="30dp"
+             android:textSize="16dp"
+            android:textColor="@color/long_bule"
+                android:background="@drawable/btn_logout_pree" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/setPram"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/login_initial_setup_pree"
+              android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+            android:text="@string/sysin"
+            android:textColor="#486e9a"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+</LinearLayout>

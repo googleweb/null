@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_repeat"
+    android:gravity="center"
+    android:paddingBottom="20dp"
+    tools:context=".CarLoginActivity" >
+
+    <EditText
+        android:id="@+id/car_login_text_vin"
+        style="@style/edittext_style"
+        android:layout_width="184dp"
+        android:layout_height="55px"
+        android:layout_x="106dp"
+        android:layout_y="290dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:maxLength="20" />
+
+    <Button
+        android:id="@+id/car_login_btu_dl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="7dp"
+        android:layout_y="360dp"
+        android:background="@drawable/login_qr" />
+
+    <Button
+        android:id="@+id/car_login_btu_qx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="153dp"
+        android:layout_y="360dp"
+        android:background="@drawable/login_qx" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="11dp"
+        android:layout_y="16dp"
+        android:text="检测类型："
+        android:textColor="#074384"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/carlogin_testtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="7dp"
+        android:layout_y="38dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="注册登记"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/carlogin_testtype_oldcar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="在用车"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/carlogin_testtype_delegate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="受托检验"
+            android:textColor="#000000" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="94dp"
+        android:text="号牌号码："
+        android:textColor="#074384"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinner_carLogin_sf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="106dp"
+        android:layout_y="80dp" />
+
+    <EditText
+        android:id="@+id/car_login_text_hphm"
+        style="@style/edittext_style"
+        android:layout_width="98dp"
+        android:layout_height="70px"
+        android:layout_x="201dp"
+        android:layout_y="82dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:maxLength="10" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="8dp"
+        android:layout_y="147dp"
+        android:text="号牌种类："
+        android:textColor="#074384"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinner_car_hpzl"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_x="104dp"
+        android:layout_y="135dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="9dp"
+        android:layout_y="196dp"
+        android:text="车辆类型："
+        android:textColor="#074384"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/Spinner_car_type"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_x="105dp"
+        android:layout_y="184dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="7dp"
+        android:layout_y="246dp"
+        android:text="使用性质："
+        android:textColor="#074384"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/Spinner_car_syxz"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_x="103dp"
+        android:layout_y="234dp" />
+
+    <TextView
+        android:id="@+id/tv_car_vin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="13dp"
+        android:layout_y="297dp"
+        android:text="VIN后六位"
+        android:textColor="#074384"
+        android:textSize="20dp" />
+
+</AbsoluteLayout>

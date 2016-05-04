@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_carlogin_itembar"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/inspection_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原  密  码：" />
+
+            <EditText
+                android:id="@+id/text_pass_old"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/inspection_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新  密  码：" />
+
+            <EditText
+                android:id="@+id/text_pass_new"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView025"
+                style="@style/inspection_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认密码：" />
+
+            <EditText
+                android:id="@+id/text_pass_comfig"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btu_up_pass_qr"
+            style="@style/inspection_value"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/login_initial_setup_pree"
+            android:text="确认修改" />
+
+        <Button
+            android:id="@+id/btu_up_pass_qx"
+            style="@style/inspection_value"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/login_initial_setup_pree"
+            android:text="取消修改" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dengdai_msg"
+        style="@style/inspection_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dengdai_msg"
+        android:visibility="gone" />
+
+</LinearLayout>

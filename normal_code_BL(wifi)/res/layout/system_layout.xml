@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_repeat"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/sys_radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            style="@style/radio_btn_style2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="密码修改" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            style="@style/radio_btn_style2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:text="路试员管理" />
+    </RadioGroup>
+
+    <ViewFlipper
+        android:id="@+id/sys_viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/user_updata_pass" >
+        </include>
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/lsry_manage" >
+        </include>
+"
+    </ViewFlipper>
+
+</LinearLayout>

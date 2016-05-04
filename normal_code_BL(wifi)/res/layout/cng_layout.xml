@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView3"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_repeat"
+    android:scrollbars="@null" >
+
+    <LinearLayout
+        android:id="@+id/contentLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/title_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/ls_txt_title3"
+                    style="@style/inspection_text"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="车辆号码 :"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/ls_txt_cphm"
+                    style="@style/inspection_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12345"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/ls_txt_title4"
+                    style="@style/inspection_text"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="车辆型号 :"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/ls_txt_clxh"
+                    style="@style/inspection_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="K12"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    style="@style/inspection_text"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="车辆VIN  :"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/ls_txt_vin"
+                    style="@style/inspection_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1231243"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/cng_radioGroup_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <RadioButton
+                android:id="@+id/cng_btn_wj"
+                style="@style/radio_btn_style2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:paddingRight="10dp"
+                android:text="外   检" />
+
+            <RadioButton
+                android:id="@+id/cng_btn_dj"
+                style="@style/radio_btn_style2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:clickable="false"
+                android:text="底   检(请先外检)" />
+        </RadioGroup>
+
+        <ViewFlipper
+            android:id="@+id/cng_viewFlipper_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <scxd.jcz.ajlw.android.model.ItemLayout
+                android:id="@+id/cng_waijian"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <Button
+                    android:id="@+id/cng_wj_btn_submit"
+                    style="@style/inspection_value"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/btn_style1"
+                    android:tag="0"
+                    android:text="提  交" />
+            </scxd.jcz.ajlw.android.model.ItemLayout>
+
+            <scxd.jcz.ajlw.android.model.ItemLayout
+                android:id="@+id/cng_dijian"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <Button
+                    android:id="@+id/cng_dj_btn_submit"
+                    style="@style/inspection_value"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/btn_style1"
+                    android:tag="1"
+                    android:text="提  交" />
+            </scxd.jcz.ajlw.android.model.ItemLayout>
+        </ViewFlipper>
+    </LinearLayout>
+
+</ScrollView>

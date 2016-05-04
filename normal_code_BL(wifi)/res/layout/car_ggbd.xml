@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_repeat"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="8"
+        android:background="@drawable/introduction_gb"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="@null" >
+
+            <scxd.jcz.ajlw.android.model.ItemLayout
+                android:id="@+id/ggxx_itemlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </scxd.jcz.ajlw.android.model.ItemLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/introduction_gb"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ggxxcx"
+            style="@style/inspection_value"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/login_initial_setup_pree"
+            android:text="整  车" />
+
+        <Button
+            android:id="@+id/dpggxxcx"
+            style="@style/inspection_value"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/login_initial_setup_pree"
+            android:text="底  盘" />
+
+        <Button
+            android:id="@+id/ggzpcx"
+            style="@style/inspection_value"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/login_initial_setup_pree"
+            android:text="照  片" />
+
+        <Button
+            android:id="@+id/cldl"
+            style="@style/inspection_value"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/login_initial_setup_pree"
+            android:text="登  录" />
+    </LinearLayout>
+</LinearLayout>

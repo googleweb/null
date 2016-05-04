@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <head>
+    <code>1</code>
+    <message>查询成功[数据下载成功]</message>
+    <rownum>1</rownum>
+  </head>
+  <body>
+    <veh>
+      <BH>SV120105000464</BH>
+      <CLPP1>%e8%92%99%e8%bf%aa%e6%ac%a7%e7%89%8c</CLPP1>
+      <CLPP2>
+      </CLPP2>
+      <CLXH>CAF7230A</CLXH>
+      <QYID>GX221014</QYID>
+      <SCDZ>ddd</SCDZ>
+      <FDJXH>L3</FDJXH>
+      <SBDHXL>LVSFBFAF213123</SBDHXL>
+      <CLLX>轿车</CLLX>
+      <ZZG>中国</ZZG>
+      <ZXXS>方向盘</ZXXS>
+      <RLZL>汽油</RLZL>
+      <PL>2260</PL>
+      <GL>117.6</GL>
+      <CWKC>4854</CWKC>
+      <CWKK>1886</CWKK>
+      <CWKG>1495</CWKG>
+      <HXNBCD>
+      </HXNBCD>
+      <HXNBKD>
+      </HXNBKD>
+      <HXNBGD>
+      </HXNBGD>
+      <GBTHPS>-/-</GBTHPS>
+      <ZS>2</ZS>
+      <ZJ>2850</ZJ>
+      <QLJ>1587</QLJ>
+      <HLJ>1605</HLJ>
+      <LTS>4</LTS>
+      <LTGG>235/45 R17,235/45ZR17,225/50 R17,215/55 R16</LTGG>
+      <ZZL>1961</ZZL>
+      <ZBZL>1586</ZBZL>
+      <HDZZL>
+      </HDZZL>
+      <ZQYZL>
+      </ZQYZL>
+      <HDZK>5</HDZK>
+      <QPZK>-</QPZK>
+      <HPZK>
+      </HPZK>
+      <PC>232</PC>
+      <DPID>
+      </DPID>
+      <HBDBQK>GB18352.3-2005%e5%9b%bd%e2%85%a3</HBDBQK>
+      <CSLX>0</CSLX>
+      <GXRQ>2013-7-4 14:03:13</GXRQ>
+      <BZ>
+      </BZ>
+      <ZZCMC>jjh</ZZCMC>
+      <GGRQ>2011-12-28 0:00:00</GGRQ>
+      <SFMJ>免检</SFMJ>
+      <CXSXRQ>2014-2-1 0:00:00</CXSXRQ>
+      <DPQYXH>dd</DPQYXH>
+      <CPLB>1</CPLB>
+      <JYW>A9E49BFDF783F4F57077760E05000073790A7F66627026250132413E221D505F531B1F07819081818B95FCE1F5DEE7E681D6F5CB8283B7B38FAAD4D9A290515E313430323031323031313132323831</JYW>
+      <CLGGBH>20070913005841</CLGGBH>
+      <SFYXZC>1</SFYXZC>
+      <GGSXRQ>2011-12-28 0:00:00</GGSXRQ>
+      <GGYXQBJ>1</GGYXQBJ>
+      <CXGGPC>
+      </CXGGPC>
+      <CXGGRQ>1900-1-1 0:00:00</CXGGRQ>
+      <TZSCRQ>2013-7-18 0:00:00</TZSCRQ>
+      <YXQMS>
+      </YXQMS>
+      <ZPS>5</ZPS>
+      <MJYXQZ>1900-1-1 0:00:00</MJYXQZ>
+      <FGBSXH>
+      </FGBSXH>
+      <FGBSSB>
+      </FGBSSB>
+      <FGBSQY>
+      </FGBSQY>
+      <ZH>
+      </ZH>
+      <ZZLLYXS>
+      </ZZLLYXS>
+      <BGAZZDYXZZL>
+      </BGAZZDYXZZL>
+      <JJLQJ>
+      </JJLQJ>
+      <QXHX>
+      </QXHX>
+      <JSSLX>0</JSSLX>
+      <CDXS>0</CDXS>
+      <ZGCS>
+      </ZGCS>
+      <YH>
+      </YH>
+      <QZDFS>
+      </QZDFS>
+      <HZDFS>
+      </HZDFS>
+      <QZDCZFS>
+      </QZDCZFS>
+      <HZDCZFS>
+      </HZDCZFS>
+      <FDJQY>
+      </FDJQY>
+      <FDJSB>
+      </FDJSB>
+      <YWABS>
+      </YWABS>
+      <CLMC>%e8%bd%bf%e8%bd%a6</CLMC>
+      <QYDM>WDV1</QYDM>
+      <GGBJ>1</GGBJ>
+    </veh>
+  </body>
+</root>

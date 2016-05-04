@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp" >
+
+    <ListView
+        android:id="@+id/lsry_list_lsry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LinearLayout1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_carlogin_itembar"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:padding="10dp"
+        android:scrollbars="@null" >
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/lsry_btn_add"
+            style="@style/inspection_value"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/btn_style1"
+            android:text="添   加" />
+
+        <Button
+            android:id="@+id/lsry_btn_cancel"
+            style="@style/inspection_value"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style1"
+            android:text="返   回" />
+
+    </LinearLayout>
+
+</RelativeLayout>
